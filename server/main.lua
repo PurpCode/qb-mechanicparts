@@ -460,24 +460,24 @@ end
 
 ----- DO NOT TOUCH ABOVE ^^^^^
 -----ONLY EDIT BELOW THIS LINE-------
---[[QBCore.Commands.Add("fix", "Repair your vehicle (Admin Only)", {}, false, function(source)
+--[[ QBCore.Commands.Add("fix", "Repair your vehicle (Admin Only)", {}, false, function(source)
     TriggerClientEvent('iens:repaira', source)
     TriggerClientEvent('vehiclemod:client:fixEverything', source)
-end, "admin")
+end, "admin") ]]
 
-QBCore.Functions.CreateUseableItem("repairkit", function(source, item)
+--[[ QBCore.Functions.CreateUseableItem("repairkit", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
         TriggerClientEvent("qb-mechanicparts:client:RepairVehicle", source)
     end
-end)
+end) ]]
 
-QBCore.Functions.CreateUseableItem("cleaningkit", function(source, item)
+--[[ QBCore.Functions.CreateUseableItem("cleaningkit", function(source, item)
     local Player = QBCore.Functions.GetPlayer(source)
 	if Player.Functions.GetItemBySlot(item.slot) ~= nil then
         TriggerClientEvent("qb-mechanicparts:client:CleanVehicle", source)
     end
-end)
+end) ]]
 
 RegisterNetEvent('qb-mechanicparts:removeItem', function(item)
     local src = source
@@ -485,12 +485,12 @@ RegisterNetEvent('qb-mechanicparts:removeItem', function(item)
     ply.Functions.RemoveItem(item, 1)
 end)
 
-RegisterNetEvent('qb-mechanicparts:server:removewashingkit', function(veh)
+--[[ RegisterNetEvent('qb-mechanicparts:server:removewashingkit', function(veh)
     local src = source
     local ply = QBCore.Functions.GetPlayer(src)
     ply.Functions.RemoveItem("cleaningkit", 1)
     TriggerClientEvent('qb-mechanicparts:client:SyncWash', -1, veh)
-end)]]
+end) ]]
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------EDIT BELOW HERE FOR 'CRAFTING'--------------------------------------------------
@@ -498,6 +498,126 @@ end)]]
 
 
 -----------------------------------------------------------ENGINE PARTS-----------------------------------------------------------
+RegisterServerEvent("craft:repairkit")
+AddEventHandler("craft:repairkit", function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    local metalscrap = Player.Functions.GetItemByName("metalscrap")
+    local rubber = Player.Functions.GetItemByName("rubber")
+    local iron = Player.Functions.GetItemByName("iron")
+    local plastic = Player.Functions.GetItemByName("plastic")
+    if metalscrap ~= nil and rubber ~= nil and iron ~= nil and plastic ~= nil then
+
+        if metalscrap.amount >= 1 and rubber.amount >= 1 and iron.amount >= 1 and plastic.amount >= 1 then
+            Player.Functions.RemoveItem("metalscrap", 1)
+            Player.Functions.RemoveItem("rubber", 1)
+            Player.Functions.RemoveItem("iron", 1)
+            Player.Functions.RemoveItem("plastic", 1)
+
+            Player.Functions.AddItem("repairkit", 1)
+            TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["repairkit"], "add")
+            TriggerClientEvent('QBCore:Notify', src, 'Repair kit crafted.', 'success')
+
+        else
+            TriggerClientEvent('QBCore:Notify', src, 'You don\'t have the correct amount of materials.', 'error')
+        end
+
+    else
+        TriggerClientEvent("QBCore:Notify", src, "Missing materials.", "error")
+    end
+
+end)
+
+RegisterServerEvent("craft:advlockpick")
+AddEventHandler("craft:advlockpick", function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    local metalscrap = Player.Functions.GetItemByName("metalscrap")
+    local rubber = Player.Functions.GetItemByName("rubber")
+    local iron = Player.Functions.GetItemByName("iron")
+    local plastic = Player.Functions.GetItemByName("plastic")
+    if metalscrap ~= nil and rubber ~= nil and iron ~= nil and plastic ~= nil then
+
+        if metalscrap.amount >= 5 and rubber.amount >= 1 and iron.amount >= 1 and plastic.amount >= 1 then
+            Player.Functions.RemoveItem("metalscrap", 5)
+            Player.Functions.RemoveItem("rubber", 1)
+            Player.Functions.RemoveItem("iron", 1)
+            Player.Functions.RemoveItem("plastic", 1)
+
+            Player.Functions.AddItem("advancedlockpick", 1)
+            TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["advancedlockpick"], "add")
+            TriggerClientEvent('QBCore:Notify', src, 'Advanced lock pick crafted.', 'success')
+
+        else
+            TriggerClientEvent('QBCore:Notify', src, 'You don\'t have the correct amount of materials.', 'error')
+        end
+
+    else
+        TriggerClientEvent("QBCore:Notify", src, "Missing materials.", "error")
+    end
+
+end)
+
+RegisterServerEvent("craft:lockpick")
+AddEventHandler("craft:lockpick", function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    local metalscrap = Player.Functions.GetItemByName("metalscrap")
+    local rubber = Player.Functions.GetItemByName("rubber")
+    local iron = Player.Functions.GetItemByName("iron")
+    local plastic = Player.Functions.GetItemByName("plastic")
+    if metalscrap ~= nil and rubber ~= nil and iron ~= nil and plastic ~= nil then
+
+        if metalscrap.amount >= 1 and rubber.amount >= 1 and iron.amount >= 1 and plastic.amount >= 1 then
+            Player.Functions.RemoveItem("metalscrap", 1)
+            Player.Functions.RemoveItem("rubber", 1)
+            Player.Functions.RemoveItem("iron", 1)
+            Player.Functions.RemoveItem("plastic", 1)
+
+            Player.Functions.AddItem("lockpick", 1)
+            TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["lockpick"], "add")
+            TriggerClientEvent('QBCore:Notify', src, 'Lock pick crafted.', 'success')
+
+        else
+            TriggerClientEvent('QBCore:Notify', src, 'You don\'t have the correct amount of materials.', 'error')
+        end
+
+    else
+        TriggerClientEvent("QBCore:Notify", src, "Missing materials.", "error")
+    end
+
+end)
+
+RegisterServerEvent("craft:harness")
+AddEventHandler("craft:harness", function()
+    local src = source
+    local Player = QBCore.Functions.GetPlayer(src)
+    local metalscrap = Player.Functions.GetItemByName("metalscrap")
+    local rubber = Player.Functions.GetItemByName("rubber")
+    local iron = Player.Functions.GetItemByName("iron")
+    local plastic = Player.Functions.GetItemByName("plastic")
+    if metalscrap ~= nil and rubber ~= nil and iron ~= nil and plastic ~= nil then
+
+        if metalscrap.amount >= 1 and rubber.amount >= 1 and iron.amount >= 1 and plastic.amount >= 1 then
+            Player.Functions.RemoveItem("metalscrap", 1)
+            Player.Functions.RemoveItem("rubber", 1)
+            Player.Functions.RemoveItem("iron", 1)
+            Player.Functions.RemoveItem("plastic", 1)
+
+            Player.Functions.AddItem("harness", 1)
+            TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["harness"], "add")
+            TriggerClientEvent('QBCore:Notify', src, 'Harness crafted.', 'success')
+
+        else
+            TriggerClientEvent('QBCore:Notify', src, 'You don\'t have the correct amount of materials.', 'error')
+        end
+
+    else
+        TriggerClientEvent("QBCore:Notify", src, "Missing materials.", "error")
+    end
+
+end)
+
 RegisterServerEvent("craft:engine0")
 AddEventHandler("craft:engine0", function()
     local src = source

@@ -75,12 +75,18 @@ AddEventHandler("craft:engine0", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:engine0")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "engine0")
 end)
@@ -97,12 +103,18 @@ AddEventHandler("craft:engine1", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:engine1")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "engine1")
 end)
@@ -119,12 +131,16 @@ AddEventHandler("craft:engine2", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:engine2")
             else
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "engine2")
 end)
@@ -141,12 +157,18 @@ AddEventHandler("craft:engine3", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:engine3")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "engine3")
 end)
@@ -163,12 +185,18 @@ AddEventHandler("craft:engine4", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:engine4")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "engine4")
 end)
@@ -186,12 +214,18 @@ AddEventHandler("craft:brake0", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:brake0")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "brake0")
 end)
@@ -208,12 +242,18 @@ AddEventHandler("craft:brake1", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:brake1")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "brake1")
 end)
@@ -230,12 +270,18 @@ AddEventHandler("craft:brake2", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:brake2")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "brake2")
 end)
@@ -252,12 +298,18 @@ AddEventHandler("craft:brake3", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:brake3")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "brake3")
 end)
@@ -274,12 +326,18 @@ AddEventHandler("craft:transmission0", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:transmission0")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "transmission0")
 end)
@@ -296,12 +354,18 @@ AddEventHandler("craft:transmission1", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:transmission1")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "transmission1")
 end)
@@ -318,12 +382,18 @@ AddEventHandler("craft:transmission2", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:transmission2")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "transmission2")
 end)
@@ -340,12 +410,18 @@ AddEventHandler("craft:transmission3", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:transmission3")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "transmission3")
 end)
@@ -362,12 +438,18 @@ AddEventHandler("craft:suspension0", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:suspension0")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "suspension0")
 end)
@@ -384,12 +466,18 @@ AddEventHandler("craft:suspension1", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:suspension1")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "suspension1")
 end)
@@ -406,12 +494,18 @@ AddEventHandler("craft:suspension2", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:suspension2")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "suspension2")
 end)
@@ -428,12 +522,18 @@ AddEventHandler("craft:suspension3", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:suspension3")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "suspension3")
 end)
@@ -450,12 +550,18 @@ AddEventHandler("craft:suspension4", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:suspension4")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "suspension4")
 end)
@@ -473,12 +579,18 @@ AddEventHandler("craft:turbo0", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:turbo0")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "turbo0")
 end)
@@ -495,12 +607,18 @@ AddEventHandler("craft:turbo1", function()
         local playerPed = PlayerPedId()
         local success = exports['ps-ui']:Circle(function(success)
             if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 TriggerServerEvent("craft:turbo1")
             else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
                 QBCore.Functions.Notify("Failed.", "error")
             end
         end, 1, 26) -- NumberOfCircles, MS
     end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
         QBCore.Functions.Notify("Cancelled.", "error")
     end, "turbo1")
 end)
@@ -533,77 +651,114 @@ end)
 
 RegisterNetEvent('craft:harness')
 AddEventHandler("craft:harness", function()
-    QBCore.Functions.Progressbar("craft_harness", "Building Harness Kit...", 11000, false, true, {
+    TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+    QBCore.Functions.Progressbar("craft_harness", "Building Harness Kit", math.random(35000, 50000), false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
         disableCombat = true,
-    }, {
-        animDict = "mini@repair",
-        anim = "fixing_a_player",
-        flags = 16,
-    }, {}, {}, function() 
+    }, {}, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(1,10)
-   if success then
-        StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
-        TriggerServerEvent("craft:harness")
-        ClearPedTasks(playerPed)
-    else
-        QBCore.Functions.Notify("Failed!", "error")
-        ClearPedTasks(playerPed)
-        end
-    end)
+        local success = exports['ps-ui']:Circle(function(success)
+            if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                TriggerServerEvent("craft:harness")
+            else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                QBCore.Functions.Notify("Failed.", "error")
+            end
+        end, 1, 26) -- NumberOfCircles, MS
+    end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
+        QBCore.Functions.Notify("Cancelled.", "error")
+    end, "harness")
 end)
 
 RegisterNetEvent('craft:repairkit')
 AddEventHandler("craft:repairkit", function()
-    QBCore.Functions.Progressbar("craft_repairkit", "Grabbing Tools...", 11000, false, true, {
+    TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+    QBCore.Functions.Progressbar("craft_repairkit", "Crafting Kit", math.random(25000, 50000), false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
         disableCombat = true,
-    }, {
-        animDict = "mini@repair",
-        anim = "fixing_a_player",
-        flags = 16,
-    }, {}, {}, function() 
+    }, {}, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(1,10)
-   if success then
-        StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
-        TriggerServerEvent("craft:repairkit")
-        ClearPedTasks(playerPed)
-    else
-        QBCore.Functions.Notify("Failed!", "error")
-        ClearPedTasks(playerPed)
-        end
-    end)
+        local success = exports['ps-ui']:Circle(function(success)
+            if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                TriggerServerEvent("craft:repairkit")
+            else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                QBCore.Functions.Notify("Failed.", "error")
+            end
+        end, 1, 26) -- NumberOfCircles, MS
+    end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
+        QBCore.Functions.Notify("Cancelled.", "error")
+    end, "repairkit")
 end)
 
 RegisterNetEvent('craft:advlockpick')
 AddEventHandler("craft:advlockpick", function()
-    QBCore.Functions.Progressbar("craft_advlockpick", "Making Lockpick Kit...", 11000, false, true, {
+    TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+    QBCore.Functions.Progressbar("craft_advlockpick", "Crafting Lock Pick", math.random(22000, 36000), false, true, {
         disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
         disableCombat = true,
-    }, {
-        animDict = "mini@repair",
-        anim = "fixing_a_player",
-        flags = 16,
-    }, {}, {}, function() 
+    }, {}, {}, {}, function() 
         local playerPed = PlayerPedId()
-        local success = exports['qb-lock']:StartLockPickCircle(1,10)
-   if success then
-        StopAnimTask(ped, dict, "machinic_loop_mechandplayer", 1.0)
-        TriggerServerEvent("craft:advlockpick")
-        ClearPedTasks(playerPed)
-    else
-        QBCore.Functions.Notify("Failed!", "error")
-        ClearPedTasks(playerPed)
-        end
-    end)
+        local success = exports['ps-ui']:Circle(function(success)
+            if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                TriggerServerEvent("craft:advlockpick")
+            else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                QBCore.Functions.Notify("Failed.", "error")
+            end
+        end, 1, 26) -- NumberOfCircles, MS
+    end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
+        QBCore.Functions.Notify("Cancelled.", "error")
+    end, "advancedlockpick")
+end)
+
+RegisterNetEvent('craft:lockpick')
+AddEventHandler("craft:lockpick", function()
+    TriggerEvent('animations:client:EmoteCommandStart', {"mechanic4"})
+    QBCore.Functions.Progressbar("craft_lockpick", "Crafting Lock Pick", math.random(22000, 36000), false, true, {
+        disableMovement = true,
+        disableCarMovement = true,
+        disableMouse = false,
+        disableCombat = true,
+    }, {}, {}, {}, function() 
+        local playerPed = PlayerPedId()
+        local success = exports['ps-ui']:Circle(function(success)
+            if success then
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                TriggerServerEvent("craft:lockpick")
+            else
+                TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+                ClearPedTasks(PlayerPedId())
+                QBCore.Functions.Notify("Failed.", "error")
+            end
+        end, 1, 26) -- NumberOfCircles, MS
+    end, function()
+        TriggerEvent('animations:client:EmoteCommandStart', {"c"})
+        ClearPedTasks(PlayerPedId())
+        QBCore.Functions.Notify("Cancelled.", "error")
+    end, "lockpick")
 end)
 
 ------------------------------
@@ -3177,16 +3332,16 @@ RegisterNetEvent('craft:mechanicparts', function()
                 event = "craft:turbos",
             }
         },
---[[         {
+        {
             id = 7,
             header = "Tools & Equipment",
             txt = "View tools & equipment list.",
             params = {
                 event = "craft:repairkit1",
             }
-        }, ]]
+        },
         {
-            id = 7,
+            id = 8,
             header = "Close",
             txt = "",
             params = {
@@ -3427,42 +3582,50 @@ RegisterNetEvent('craft:turbos', function()
 end)
 
 ---------- TOOLS MENU
---[[ RegisterNetEvent('craft:repairkit1', function()
+ RegisterNetEvent('craft:repairkit1', function()
     exports['qb-menu']:openMenu({
         {
             id = 1,
             header = "Repair Kit",
-            txt = "3x MetalScrap | 2x Rubber | 2x Plastic | 2x Aluminum | 2x Steel",
+            txt = "1x metalscrap, 1x rubber, 1x iron, 1x plastic",
             params = {
                 event = "craft:repairkit",
             }
         },
         {
             id = 2,
-            header = "Advanced Lockpick",
-            txt = "2x MetalScrap | 1x Rubber | 1x Plastic | 1x Aluminum",
+            header = "Lock Pick",
+            txt = "1x metalscrap, 1x rubber, 1x iron, 1x plastic",
+            params = {
+                event = "craft:lockpick",
+            }
+        },
+        {
+            id = 3,
+            header = "Advanced Lock Pick",
+            txt = "5x metalscrap, 1x rubber, 1x iron, 1x plastic",
             params = {
                 event = "craft:advlockpick",
             }
         },
         {
-            id = 3,
+            id = 4,
             header = "Harness Kit",
-            txt = "5x MetalScrap | 3x Rubber | 3x Plastic | 3x Aluminum | 2x Steel",
+            txt = "1x metalscrap, 1x rubber, 1x iron, 1x plastic",
             params = {
                 event = "craft:harness",
             }
         },
         {
-            id = 4,
-            header = "Main Menu",
-            txt = "Back to main menu",
+            id = 5,
+            header = "Back",
+            txt = "",
             params = {
                 event = "craft:mechanicparts",
             }
         },
     })
-end) ]]
+end)
 
 
 -------------------------------------------------
